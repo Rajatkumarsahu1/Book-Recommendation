@@ -167,3 +167,17 @@ if st.session_state.cart:
         st.rerun()
 else:
     st.write("Add some books to your cart to proceed to checkout.")
+# Footer with your portfolio link
+# Footer with your portfolio, LinkedIn, Medium, and email
+st.markdown("---", unsafe_allow_html=True)
+st.markdown(
+    """
+    <div style='text-align: center; font-size: 16px;'>
+        <strong>Made by <a href='https://www.linkedin.com/in/rajat-kumar-sahu1/' target='_blank'>Rajat Kumar Sahu</a></strong><br>
+        📧 <a href='mailto:rajatks1997@gmail.com'>rajatks1997@gmail.com</a> &nbsp; | &nbsp;
+        <a href='https://www.datascienceportfol.io/rajatks' target='_blank'>Portfolio</a> &nbsp; | &nbsp;
+        <a href='https://medium.com/@pythonshortcodes' target='_blank'>Medium</a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
