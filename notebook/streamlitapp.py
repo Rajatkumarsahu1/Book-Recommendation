@@ -4,10 +4,10 @@ from fuzzywuzzy import process
 import pickle
 
 # Load model and data
-model = pickle.load(open('artifacts/model.pkl', 'rb'))
-book_names = pickle.load(open('artifacts/book_names.pkl', 'rb'))
-final_rating = pickle.load(open('artifacts/final_rating.pkl', 'rb'))
-book_pivot = pickle.load(open('artifacts/book_pivot.pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
+book_names = pickle.load(open('book_names.pkl', 'rb'))
+final_rating = pickle.load(open('final_rating.pkl', 'rb'))
+book_pivot = pickle.load(open('book_pivot.pkl', 'rb'))
 
 st.set_page_config(page_title="📚 Book Recommender Store", layout="wide")
 
