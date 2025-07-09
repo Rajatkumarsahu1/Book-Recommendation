@@ -1,21 +1,22 @@
 # Book-Recommendation
 
-# 1. Clone the repository
+### 1. Clone the repository
 git clone https://github.com/Rajatkumarsahu1/Book-Recommendation.git
 cd book-recommendation
 
-# 2. Create a virtual environment
+### 2. Create a virtual environment
 python -m venv venv
 
-# 3. Activate the virtual environment
+### 3. Activate the virtual environment
 
-# On Git Bash for windows :
+#### On Git Bash for windows :
 python -m venv venv
+#### activate this in bash
 source venv/Scripts/activate
 
 
 
-# 4. Install required packages
+### 4. Install required packages
 pip install -r requirements.txt
 
 
