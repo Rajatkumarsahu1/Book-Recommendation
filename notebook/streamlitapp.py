@@ -2,12 +2,14 @@ import streamlit as st
 import numpy as np
 from fuzzywuzzy import process
 import pickle
+import os
 
-# Load model and data
-model = pickle.load(open('artifacts/model.pkl', 'rb'))
-book_names = pickle.load(open('artifacts/book_names.pkl', 'rb'))
-final_rating = pickle.load(open('artifacts/final_rating.pkl', 'rb'))
-book_pivot = pickle.load(open('artifacts/book_pivot.pkl', 'rb'))
+ARTIFACTS_DIR = os.path.join(os.path.dirname(__file__), "artifacts")
+
+model = pickle.load(open(os.path.join(ARTIFACTS_DIR, 'model.pkl'), 'rb'))
+book_names = pickle.load(open(os.path.join(ARTIFACTS_DIR, 'book_names.pkl'), 'rb'))
+final_rating = pickle.load(open(os.path.join(ARTIFACTS_DIR, 'final_rating.pkl'), 'rb'))
+book_pivot = pickle.load(open(os.path.join(ARTIFACTS_DIR, 'book_pivot.pkl'), 'rb'))
 
 st.set_page_config(page_title="📚 Book Recommender Store", layout="wide")
 
